@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Java Web</title>
+    <link rel="stylesheet" type="text/css" href="assets/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="assets/easyui/themes/icon.css">
+    <script type="text/javascript" src="assets/easyui/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/easyui/js/jquery.easyui.min.js"></script>
+</head>
+<body class="easyui-layout">
+
+    <!-- top -->
+    <div data-options="region:'north',split:false" style="height:90px;padding:20px;background-color:#e4ecff;">
+        <span style="font-size:30px">Java Web dengan EasyUI</span>
+        <span style="float:right; font-size:30px">Irfan Setiawan Dawolo</span>
+    </div>
+
+    <!-- left -->
+    <div data-options="region:'west',split:true" title="Main Menu" style="width:200px;padding:1px;overflow:hidden;">
+        <div class="easyui-accordion" data-options="fit:true,border:false">
+            <div title="Master Data" style="padding:10px;overflow:auto;" data-options="selected:true">
+                <p><a href="Data Master/DataGroup.jsp" target="isi">Daftar Group Produk</a></p>
+                <p><a href="<?php echo site_url('subgroupProduct'); ?>" target="isi">Daftar Subgroup Produk</a></p>
+            </div>
+            <div title="Menu 2" style="padding:10px">
+                <p>Sub Menu 2.1</p>
+                <p>Sub Menu 2.2</p>
+            </div>
+            <div title="Menu 3" style="padding:10px">
+                <p>Sub Menu 3.1</p>
+                <p>Sub Menu 3.3</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom -->
+    <div data-options="region:'south'" style="text-align:right;height:45px;background:#e4ecff;padding:0px;">
+        <p><font color="#0142fe"><strong>Copyright &copy; 2017 Powered By <u>FASILKOM</u></strong></font>&nbsp;&nbsp;&nbsp;</p>
+    </div>
+
+    <!-- center -->
+    <div data-options="region:'center'" title="Main Content" style="padding:1px">
+        <iframe name="isi" frameborder="0" width="100%" height="99%" style="background:#e4ecff;"></iframe>
+    </div>
+
+</body>
+</html>
